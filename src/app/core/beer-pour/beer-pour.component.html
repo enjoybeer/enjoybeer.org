@@ -1,0 +1,25 @@
+<div class="BeerPour">
+    <div [@pourState]="pourState"
+         (@pourState.done)="onPourAnimationDone($event)"
+         class="BeerPour__pour"></div>
+
+    <div class="BeerPour__beaker">
+        <div [@foamState]="foamState" class="BeerPour__foam">
+            <span class="BeerPourFoam BeerPourFoam--item-1"></span>
+            <span class="BeerPourFoam BeerPourFoam--item-2"></span>
+            <span class="BeerPourFoam BeerPourFoam--item-3"></span>
+            <span class="BeerPourFoam BeerPourFoam--item-4"></span>
+            <span class="BeerPourFoam BeerPourFoam--item-5"></span>
+            <span class="BeerPourFoam BeerPourFoam--item-6"></span>
+            <span class="BeerPourFoam BeerPourFoam--item-7"></span>
+        </div>
+
+        <div [@liquidState]="liquidState" class="BeerPour__liquid">
+            <span class="BeerPourBubble BeerPourBubble--item-1"></span>
+            <span class="BeerPourBubble BeerPourBubble--item-2"></span>
+            <span class="BeerPourBubble BeerPourBubble--item-3"></span>
+            <span class="BeerPourBubble BeerPourBubble--item-4"></span>
+            <span class="BeerPourBubble BeerPourBubble--item-5"></span>
+        </div>
+    </div>
+</div>

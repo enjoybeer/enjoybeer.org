@@ -1,0 +1,21 @@
+<div class="App">
+    <div class="App__beerLogo">
+        <beer-pour></beer-pour>
+    </div>
+
+    <div class="App__title">
+        <h1 [@flyInFromBottom]="contentState">맥락</h1>
+        <h2 [@flyInFromBottom]="contentState">맥락</h2>
+    </div>
+
+    <div [@flyInFromBottom]="contentState" class="App__subTitle">
+        고려대학교 맥주양조동아리
+    </div>
+
+    <main [@flyInFromBottom]="contentState" class="App__content">
+        <div class="App__info">
+            안녕하세요!<br />
+            맥주의 즐거움 맥락입니다.
+        </div>
+    </main>
+</div>
