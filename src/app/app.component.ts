@@ -9,7 +9,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
         trigger('flyInFromBottom', [
             state('active', style({
                 opacity: '1',
-                transform: 'translateY(0%)'
+                transform: 'translate3D(0, 0, 0)'
             })),
             transition('void => active', animate('500ms 5.5s ease-in-out'))
         ])
