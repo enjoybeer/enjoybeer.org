@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
+
 
 @Component({
     selector: 'beer-app-root',
@@ -15,10 +16,20 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
         ])
     ]
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
     contentState: string;
+    showMain = false;
 
     ngOnInit(): void {
         this.contentState  = 'active';
+
+        setTimeout(() => {
+            this.showMain = true;
+        }, 5500);
+    }
+
+    ngAfterViewInit(): void {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
 }

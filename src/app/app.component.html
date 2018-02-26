@@ -1,21 +1,69 @@
-<div class="App">
+<div [class.showMain]="showMain" class="App">
     <div class="App__beerLogo">
         <beer-pour></beer-pour>
     </div>
 
-    <div class="App__title">
-        <h1 [@flyInFromBottom]="contentState">맥락</h1>
-        <h2 [@flyInFromBottom]="contentState">맥락</h2>
-    </div>
-
-    <div [@flyInFromBottom]="contentState" class="App__subTitle">
-        고려대학교 맥주양조동아리
-    </div>
-
-    <main [@flyInFromBottom]="contentState" class="App__content">
-        <div class="App__info">
-            안녕하세요!<br />
-            맥주의 즐거움 맥락입니다.
+    <div class="App__main">
+        <div class="App__title">
+            <div [@flyInFromBottom]="contentState" class="App__logo first">
+                <img src="assets/logo.svg">
+            </div>
+            <div [@flyInFromBottom]="contentState" class="App__logo second">
+                <img src="assets/logo_shadow.svg">
+            </div>
         </div>
-    </main>
+
+        <div [@flyInFromBottom]="contentState" class="App__subTitle">
+            고려대학교 맥주양조동아리
+        </div>
+
+        <article [@flyInFromBottom]="contentState" class="App__content">
+            <div class="App__info">
+                <p>
+                    고려대학교 유일한 맥주 양조동아리 '맥락'입니다.<br>
+                    다가오는 새 학기를 저희와 같이 즐겁게 보낼 2기 신입 회원을 모집하고 있습니다!!<br>
+                </p>
+
+                <ul>
+                    <li><b>모집 대상</b> : 고려대학교의 모든 학부생</li>
+                    <li><b>모집 기간</b> : 2월 28일(수) ~ 3월 9일(금)</li>
+                    <li><b>면접</b> : 3월 12일(월) & 13일(화) 정규 수업 시간 이후 희망하는 시간대를 조사하여 진행 예정</li>
+                    <li><b>개강 총회 및 신입부원 OT</b> : 3월 15일(목)</li>
+                    <li><b>신입부원 환영 MT</b> : 3월 23일(금) ~ 3월 24일(토)</li>
+                </ul>
+
+                <p>
+                    ‘맥락’은 맥주라는 공통의 관심사를 가지고 지난 학기에 처음으로 설립된 동아리입니다.<br>
+                    맥주 양조 공방의 공간상 제약으로 인해 아쉽지만 총 활동 회원을 30명 정도로 제한하여 운영하고 있는 관계로 부득이하게 면접을 진행하는 점 양해 부탁드립니다.<br>
+                    <em>* 맥주 양조는 주말에 진행됩니다.</em>
+                </p>
+
+                <blockquote>
+                    <label>Q. 맥주를 좋아하고 관심은 있지만 지금은 아는게 별로 없다고요?</label>
+                    <span>A. 오히려 좋습니다. 이번 학기 맥주에 관한 다양한 스터디들이 계획되어 있습니다. 같이 알아 봐요!!!</span>
+                </blockquote>
+
+                <blockquote>
+                    <label>Q. 기존 동아리 회원들이랑 잘 어울릴 수 있을지 걱정된다고요?</label>
+                    <span>A. 걱정하지 마세요!!! 저희도 이제 막 생겨난 신생 동아리입니다. 열정적으로 활동할 회원분들을 기다리고 있으니 부담 가지지 마시고 많이들 지원바랍니다!!!</span>
+                </blockquote>
+
+                <blockquote>
+                    <label>Q. 맥주 만들기만 하면 무슨 재미냐구요?</label>
+                    <span>A. 당연하죠!!! 수제 맥주집 탐방, 매주 있을 정기 모임 뒤풀이, 축제 주점, 양조장 견학 등등 얼마든지 기회는 많으니 지금 바로 지원하시면 됩니다!!!</span>
+                </blockquote>
+            </div>
+
+            <div class="App__recruit">
+                <a href="https://goo.gl/forms/fY7g4zLbHGqcYAAe2" target="_blank">지원하기</a>
+            </div>
+
+            <div class="App__contact">
+                <a href="https://fb.com/enjoybeer.org" target="_blank">페이스북</a>
+                <label>/</label>
+                <a href="mailto://enjoybeer.org@gmail.com" target="_blank">이메일</a>
+            </div>
+        </article>
+    </div>
+
 </div>
