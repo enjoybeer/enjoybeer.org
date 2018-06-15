@@ -4,7 +4,8 @@
     "license": "MIT",
     "scripts": {
         "start": "npx ng serve",
-        "build": "npx ng build --prod"
+        "build": "npx ng build --prod",
+        "deploy": "firebase deploy"
     },
     "private": true,
     "dependencies": {
